@@ -1,7 +1,6 @@
 
 addpath(genpath(pwd))
-
-%% 
+ 
 song_a=readmidi('./samples/case1_song_a.mid');
 song_b=readmidi('./samples/case1_song_b.mid');
 
