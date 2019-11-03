@@ -32,7 +32,7 @@ function [D]= get_distance_matrix(songa, songb, pitch_or_rhythm)
 end
 
 function D= segments_pitch(song_a, song_b, seg_win_size)
-  % get pitch
+% For pitch
   pc=song_a(:,4);
   pc_b=song_b(:,4);
   % convert to interval 
@@ -89,13 +89,13 @@ function D= segments_pitch(song_a, song_b, seg_win_size)
   end
       D=D_final;
 end
-%% Rhythm segmentation
+
 function D= segments_rhythm(song_a, song_b, seg_win_size)   
-  %% get beat
+% For rhythm
+  % get beat
   beat=song_a(:,7);
   beat_b=song_b(:,7);
-
-  %% convert to ratio
+  % convert to ratio
   rhythm_ratio= zeros(length(beat)-1,1);
   rhythm_ratio_b=zeros(length(beat_b)-1,1);
   R_interval= zeros(length(beat)-1,1);
@@ -114,8 +114,7 @@ function D= segments_rhythm(song_a, song_b, seg_win_size)
   end
   R_interval_b=round(rhythm_ratio_b/acc)*acc;
   R_interval_b(R_interval_b > 4) = 4;
-
-  %% get minimum distance
+  % get minimum distance
   for i = 1:interv_size
       count_s=0;
       count_t=0;
@@ -125,7 +124,6 @@ function D= segments_rhythm(song_a, song_b, seg_win_size)
       for seg_b=1:interv_size_b
           hop_start = 1+seg_hop_size*(seg_b-1);
           interval_hopped_b_tmp = R_interval_b(hop_start:hop_start+seg_win_size-2);
-
           D_tmp(seg_b)=EditDistance(interval_hopped_a_tmp, interval_hopped_b_tmp);
       end
       min_v=min(D_tmp);
@@ -135,8 +133,8 @@ function D= segments_rhythm(song_a, song_b, seg_win_size)
       D=D_final;
 end
 
-%% Distance measure
 function [V,v] = EditDistance(string1,string2)
+% Distance measure (edit dist.)
   m=length(string1);
   n=length(string2);
   v=zeros(m+1,n+1);
@@ -158,8 +156,8 @@ function [V,v] = EditDistance(string1,string2)
   V=v(m+1,n+1);
 end
 
-%% Get graph
-function D_graph=get_graph(D, pitch_or_rhythm)
+function D_graph = get_graph(D, pitch_or_rhythm)
+% Generate a graph
   D(:,:)=1-D(:,:);
   y=size(D,1);
   x=size(D,2);
