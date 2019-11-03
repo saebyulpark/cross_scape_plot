@@ -29,5 +29,5 @@ score = get_similarity_score(dist_mat)
 
 ## References
 This sample case is one of the plagiarism cases (Mood Music v. De Wolfe) and the following links provide resources for this case.
-1. https://blogs.law.gwu.edu/mcir/case/mood-music-v-de-wolfe/
-2. https://www.lostinmusic.org/Cases/Detail/3-mood-music-vs-de-wolfe-music#tab_evidence
+ - https://blogs.law.gwu.edu/mcir/case/mood-music-v-de-wolfe/
+ - https://www.lostinmusic.org/Cases/Detail/3-mood-music-vs-de-wolfe-music#tab_evidence
