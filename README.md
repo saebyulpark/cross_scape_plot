@@ -1,6 +1,6 @@
 # Cross-Scape Plot Representation
 
-Matlab implementation of "A Cross-Scape Plot Representation for Visualizing Symbolic Melodic Similarity, ISMIR 2019".
+Matlab implementation of "[A Cross-Scape Plot Representation for Visualizing Symbolic Melodic Similarity](http://archives.ismir.net/ismir2019/paper/000050.pdf), ISMIR 2019".
 
 ![alt tag](cross_scape_plot.png)
  
