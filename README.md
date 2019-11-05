@@ -27,6 +27,8 @@ score = get_similarity_score(dist_mat)
 ## Result
 ![result](result.png)
 
+An example of a cross-scape plot. The local similarity is indicated by color (pitch: red, rhythm: green). The x-axis shows the location of the longer melody. The y-axis represents the segment size.
+
 ## References
 This sample case is one of the plagiarism cases (Mood Music v. De Wolfe) and the following links provide resources for this case.
  - https://blogs.law.gwu.edu/mcir/case/mood-music-v-de-wolfe/
