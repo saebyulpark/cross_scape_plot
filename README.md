@@ -35,7 +35,8 @@ This sample case is one of the plagiarism cases (Mood Music v. De Wolfe) and the
  - https://www.lostinmusic.org/Cases/Detail/3-mood-music-vs-de-wolfe-music#tab_evidence
 
 ## Python Implementation
-Note: The Python version of this implementation has been updated, and the link to the updated code can be found [here](https://colab.research.google.com/drive/1KDqgw9BaOmQ_iGCJVHbI9e9OexynIdPj?usp=sharing).
+Note: The Python version of this implementation has been updated, and the link to the updated code can be found here:
+[**Cross-Scapeplot_Demo.ipynb**](https://colab.research.google.com/drive/1KDqgw9BaOmQ_iGCJVHbI9e9OexynIdPj?usp=sharing).
 
 
 
