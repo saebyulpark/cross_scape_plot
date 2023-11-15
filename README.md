@@ -1,4 +1,4 @@
-# Cross-Scape Plot Representation
+# Cross-Scapeplot Representation
 
 Matlab implementation of "[A Cross-Scape Plot Representation for Visualizing Symbolic Melodic Similarity](http://archives.ismir.net/ismir2019/paper/000050.pdf), ISMIR 2019".
 
@@ -33,3 +33,10 @@ An example of a cross-scape plot. The local similarity is indicated by color (pi
 This sample case is one of the plagiarism cases (Mood Music v. De Wolfe) and the following links provide resources for this case.
  - https://blogs.law.gwu.edu/mcir/case/mood-music-v-de-wolfe/
  - https://www.lostinmusic.org/Cases/Detail/3-mood-music-vs-de-wolfe-music#tab_evidence
+
+##Python Implementation
+Note: The Python version of this implementation has been updated, and the link to the updated code can be found [here](https://colab.research.google.com/drive/1KDqgw9BaOmQ_iGCJVHbI9e9OexynIdPj?usp=sharing).
+
+
+
+
